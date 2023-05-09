@@ -65,8 +65,9 @@
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-   tg.sendData("aaaaaaaaaaa");
    tg.showAlert("bbbbb");      
+   tg.sendData("aaaaaaaaaaa");
+  
       if (tg.MainButton.isVisible){ //если кнопка показана 
          tg.MainButton.hide() //скрываем кнопку 
       }
