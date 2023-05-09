@@ -54,7 +54,6 @@
 
 <script>
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
-   tg.sendData('aaaaaaaaaaa');
    tg.expand(); //расширяем на все окно  
 
    tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
@@ -66,6 +65,8 @@
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
 
    btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
+   tg.sendData("aaaaaaaaaaa");
+   tg.showAlert("bbbbb");      
       if (tg.MainButton.isVisible){ //если кнопка показана 
          tg.MainButton.hide() //скрываем кнопку 
       }
